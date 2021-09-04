@@ -17,7 +17,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
-    setState(() {});
     Widget tampilData() {
       return Container(
         child: Column(

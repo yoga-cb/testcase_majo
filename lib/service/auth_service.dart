@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:testcase_majo/model/User_model.dart';
-import 'package:testcase_majo/service/user_service.dart';
 
 class AuthService {
   final FirebaseAuth auth = FirebaseAuth.instance;
@@ -29,7 +28,7 @@ class AuthService {
           id: userGoogle.uid,
           name: userGoogle.displayName.toString(),
           email: googleUser.email);
-      return UserService().getUser(user);
+      return user;
     } catch (e) {
       throw e;
     }

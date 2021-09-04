@@ -1,4 +1,3 @@
-import 'package:testcase_majo/cubit/auth_cubit.dart';
 import 'package:testcase_majo/model/User_model.dart';
 
 class UserService {
